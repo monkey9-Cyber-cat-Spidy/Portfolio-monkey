@@ -776,14 +776,90 @@ footer {
     margin-bottom: 15px;
   }
 
-  .contact-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+.contact-item {
+      flex-direction: column;
+      align-items: center;
+    }
 
-  .contact-item i {
-    margin-right: 0;
-    margin-bottom: 10px;
+    .contact-item i {
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      text-align: center;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      font-size: 0.9rem;
+    }
   }
+}
+
+/* Default Dark Mode */
+body {
+  background-color: #111827; /* Tailwind's gray-900 */
+  color: #f9fafb;            /* Tailwind's gray-50 */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Mode (This will be applied temporarily with the shake effect) */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode toggle button style */
+#darkModeToggle {
+  background-color: #2d3748;  /* Tailwind's gray-700 */
+  color: #f9fafb;             /* Tailwind's gray-50 */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#darkModeToggle:hover {
+  background-color: #4a5568;  /* Tailwind's gray-600 */
+}
+
+#darkModeToggle:focus {
+  outline: none;
+}
+
+/* Funny Message for Light Mode */
+#lightModeMessage {
+  font-size: 18px;
+  color: #ff0000;
+  font-style: italic;
+  display: none;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ff6347; /* Tomato red color for fun */
+}
+
+/* Shake Effect (For funny message) */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Apply the shake effect to the button when in light mode */
+body.light #darkModeToggle {
+  animation: shake 0.5s ease-in-out;
+  animation-iteration-count: 3;
+}
+
+/* Show funny message in light mode */
+body.light #lightModeMessage {
+  display: block;
 }
