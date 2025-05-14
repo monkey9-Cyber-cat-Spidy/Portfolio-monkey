@@ -42,7 +42,7 @@ A modern, responsive personal portfolio website built with HTML, CSS, and JavaSc
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/monkey9-Cyber-cat-Spidy/CodeAlpha-Task-3.git
+   git clone [https://github.com/monkey9-Cyber-cat-Spidy/Portfolio-monkey.git]
    cd portfolio
    ```
 
