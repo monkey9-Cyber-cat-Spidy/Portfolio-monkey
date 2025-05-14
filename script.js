@@ -85,25 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   };
-document.addEventListener("DOMContentLoaded", function () {
-  const darkModeToggle = document.getElementById("darkModeToggle");
-  const lightModeMessage = document.getElementById("lightModeMessage");
-
-  // Force dark mode (no toggling)
-  document.body.classList.add("dark");
-
-  // If somehow light mode is detected, show the funny message and shake the button
-  darkModeToggle.addEventListener("click", function () {
-    document.body.classList.add("light");
-
-    // Display the funny message
-    lightModeMessage.style.display = "block";
-
-    // Shake the button to indicate something's wrong with light mode
-    darkModeToggle.style.animation = "shake 0.5s ease-in-out";
-    darkModeToggle.style.animationIterationCount = "3";
-  });
-});
 
   // Initial call
   animateOnScroll();
