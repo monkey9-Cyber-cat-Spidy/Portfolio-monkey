@@ -876,3 +876,24 @@ footer {
     margin-bottom: 10px;
   }
 }
+
+.btn {
+      padding: 8px 16px;
+      background-color: #d83a3a;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      font-size: 0.9em;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+    
+    .btn:hover {
+      background-color: #b73131;
+      transform: translateY(-3px);
+    }
+    
+  
