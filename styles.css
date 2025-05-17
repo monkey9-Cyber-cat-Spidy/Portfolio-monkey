@@ -877,7 +877,7 @@ footer {
   }
 }
 
-.btn {
+.btnmonk {
       padding: 8px 16px;
       background-color: #d83a3a;
       color: white;
@@ -891,7 +891,7 @@ footer {
       display: inline-block;
     }
     
-    .btn:hover {
+    .btnmonk:hover {
       background-color: #b73131;
       transform: translateY(-3px);
     }
